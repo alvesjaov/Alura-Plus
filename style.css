@@ -6,7 +6,7 @@
     --cinza-secundario: #C0C0C0;
     --background-botao: #167BF7;
     --destaque-text: #EC2F46;
-    --background: #00030c;
+    --cor-de-fundo: #00030c;
     --font-principal: 'inter', sans-serif;
 }
 
@@ -17,7 +17,7 @@
 
 body {
     box-sizing: border-box;
-    background-color: var(--background);
+    background-color: var(--cor-de-fundo);
     color: var(--branco-principal);
     font-family: var(--font-principal);
 }
@@ -42,7 +42,7 @@ body {
     flex-direction: column;
     text-align: center;
     margin: 0 10%;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .container__titulo1 {
@@ -51,14 +51,14 @@ body {
 }
 
 .container__imagem1 {
-    margin: 0 15%;
+    margin: 6% auto;
 }
 
 .container__butao {
     text-decoration: none;
     background-color: var(--background-botao);
     border-radius: 0.3125rem;
-    padding: 1rem;
+    padding: 0.75rem;
     color: var(--branco-principal);
     font-weight: 400;
     font-size: 1rem;
@@ -90,7 +90,7 @@ body {
     color: var(--cinza-secundario);
     font-size: 1rem;
     margin-bottom: 2rem;
-    
+
 }
 
 .container__imagem2 {
@@ -102,50 +102,168 @@ body {
     margin: 0% 8%;
 }
 
-.container__imagem3{
+.container__imagem3 {
     width: 90%;
-    margin: 0 0 0 6%;
+    margin-left: 6%;
+}
+
+.sessao4 {
+    align-items: center;
+    margin: 0% 8%;
+}
+
+.container__titulo4 {
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.container__imagem4 {
+    width: 95%;
+}
+
+.dispositivos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    font-weight: 700;
+    font-size: 3rem;
+    color: var(--branco-principal);
+}
+
+.dispositivo__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 10% 0;
+}
+
+.dispositivo__imagem {
+    width: 80%;
+}
+
+.lista__item {
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--branco-principal);
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2%;
+}
+
+.rodape__imagem {
+    width: 6%;
+    margin: 2.5rem;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-bottom: 1rem;
+}
+
+.lista__link a {
+    text-decoration: none;
+    margin-left: 1rem;
+    color: var(--branco-principal);
+}
+
+.rodape__paragrafo {
+    text-align: center;
+    font-size: 0.875rem;
+    color: var(--cinza-secundario);
+    margin: 0.4rem 0;
 }
 
 
 
 
-
-
-
 @media (max-width: 940px) {
-    .container {
-        display: flex;
-        height: fit-content;
-        padding: 2.25rem 0;
+
+    .container,
+    .dispositivos,
+    .rodape {
+        height: auto;
         text-align: center;
-
     }
 
-    .sessao1 {
-        background-image: none;
-    }
 
-    .container__conteudo1 {
-        margin: 0;
-        padding: 6%;
-    }
-
-    .container__imagem1,.container__imagem2, .container__imagem3{
-        margin: 0 5% 10% 5%;
-        order: -1;
-    }
-
-    .sessao2 {
-        flex-direction: column;
-    }
-
-    .container__titulo2{
-        font-size: 1.5rem;
-    }
-
-    .sessao3{
+    .sessao1,
+    .sessao2,
+    .sessao3,
+    .sessao4 {
         display: flex;
         flex-direction: column;
+        background-image: none;
+        margin: 20% 0;
     }
+
+    .container__imagem1,
+    .container__imagem2,
+    .container__imagem3,
+    .container__imagem4 {
+        order: -1;
+        margin: 2rem 0;
+    }
+
+    .container__imagem2,
+    .container__imagem3,
+    .container__imagem4 {
+        width: 70%;
+    }
+
+    .container__titulo1,
+    .container__titulo2,
+    .container__titulo4,
+    .dispositivos__titulo {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .dispositivo__lista {
+        margin: 0.5rem 0;
+        flex-direction: row-reverse;
+    }
+
+    .lista__item {
+        font-size: 1rem;
+    }
+
+    .rodape {
+        margin: 1rem 0.4rem;
+    }
+
+    .rodape__imagem {
+        width: 20%;
+        margin: 5rem 0 1rem 0;
+    }
+
+    .rodape__lista {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 2rem;
+
+    }
+
+    .lista__link a {
+
+        font-size: small;
+        margin-bottom: 1rem;
+    }
+
+    .rodape__paragrafo {
+        /* text-align: justify; */
+        font-size: 0.6rem;
+        margin: 0;
+
+    }
+
 }
