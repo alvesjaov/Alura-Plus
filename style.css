@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-
 :root {
     --branco-principal: #FFFFFF;
     --cinza-secundario: #C0C0C0;
@@ -183,9 +182,6 @@ body {
     margin: 0.4rem 0;
 }
 
-
-
-
 @media screen and (max-width: 768px) {
 
     .container,
@@ -194,7 +190,6 @@ body {
         height: auto;
         text-align: center;
     }
-
 
     .sessao1,
     .sessao2,
@@ -250,20 +245,16 @@ body {
         flex-direction: column;
         align-items: flex-start;
         margin-bottom: 2rem;
-
     }
 
     .lista__link a {
-
         font-size: small;
         margin-bottom: 1rem;
     }
 
     .rodape__paragrafo {
-        /* text-align: justify; */
         font-size: 0.6rem;
         margin: 0;
-
     }
 
 }
