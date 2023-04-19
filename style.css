@@ -47,7 +47,7 @@ body {
 
 .container__titulo1 {
     font-weight: 700;
-    font-size: 1.75rem;
+    font-size: 1.625rem;
 }
 
 .container__imagem1 {
@@ -186,7 +186,7 @@ body {
 
 
 
-@media (max-width: 940px) {
+@media screen and (max-width: 768px) {
 
     .container,
     .dispositivos,
